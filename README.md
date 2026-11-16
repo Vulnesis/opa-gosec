@@ -1,5 +1,7 @@
 # opa-gosec
 
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/Vulnetix/opa-gosec)
+
 OPA/Rego rules for the [Vulnetix CLI](https://github.com/Vulnetix/cli) SAST engine — a clean-room, text-pattern-based implementation of [gosec](https://github.com/securego/gosec) security checks.
 
 Each rule is an independent `.rego` file under `rules/` that is auto-discovered by the CLI. Rules receive `input.file_contents` (a `map[string]string` of filepath → content) and emit a `findings` set.
