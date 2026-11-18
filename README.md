@@ -1,21 +1,21 @@
 # opa-gosec
 
-[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/Vulnetix/opa-gosec)
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/Vulnesis/opa-gosec)
 
-OPA/Rego rules for the [Vulnetix CLI](https://github.com/Vulnetix/cli) SAST engine — a clean-room, text-pattern-based implementation of [gosec](https://github.com/securego/gosec) security checks.
+OPA/Rego rules for the [Vulnesis CLI](https://github.com/Vulnesis/cli) SAST engine — a clean-room, text-pattern-based implementation of [gosec](https://github.com/securego/gosec) security checks.
 
 Each rule is an independent `.rego` file under `rules/` that is auto-discovered by the CLI. Rules receive `input.file_contents` (a `map[string]string` of filepath → content) and emit a `findings` set.
 
 ## Usage
 
 ```bash
-vulnetix sast --rule Vulnetix/opa-gosec /path/to/go/project
+vulnesis sast --rule Vulnesis/opa-gosec /path/to/go/project
 ```
 
 Disable built-in rules and run only these:
 
 ```bash
-vulnetix sast --rule Vulnetix/opa-gosec --disable-default-rules /path/to/go/project
+vulnesis sast --rule Vulnesis/opa-gosec --disable-default-rules /path/to/go/project
 ```
 
 ## Rules
