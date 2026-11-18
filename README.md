@@ -1,6 +1,6 @@
 # opa-gosec
 
-[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/Vulnesis/opa-gosec)
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/Vulnetix/opa-gosec)
 
 OPA/Rego rules for the [Vulnesis CLI](https://github.com/Vulnesis/cli) SAST engine — a clean-room, text-pattern-based implementation of [gosec](https://github.com/securego/gosec) security checks.
 
